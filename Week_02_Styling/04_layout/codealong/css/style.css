@@ -22,3 +22,9 @@ body{
   bottom: 5px;
   right: 10px;
 }
+
+.pwr_lvl1{
+  z-index: 1;
+}
+
+
