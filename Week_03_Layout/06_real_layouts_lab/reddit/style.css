@@ -1,0 +1,161 @@
+/****************/
+
+/*UTILITY CLASSES*/
+
+/****************/
+
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: helvetica, sans-serif;
+}
+
+.fl {
+  float: left;
+}
+
+a{
+  text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/****************/
+
+/*REAL STUFF*/
+
+/****************/
+.small_nav{
+  background-color: rgb(229, 229, 229);
+  border-bottom: 1px solid gray;
+  padding-left: 10px;
+}
+
+.small_nav a{
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+
+.nav{
+  background-color: rgb(209, 222, 245);
+  padding: 1px;
+  border-bottom: 1px solid rgb(107, 129, 215);
+}
+
+.nav a{
+  color: #369;
+  font-weight: bold;
+  background-color: rgb(231, 244, 255);
+  display: inline-block;
+  padding: 5px 4px 2px 4px;
+  position: relative;
+  top: 2px;
+}
+
+.nav a.active{
+  background-color: white;
+  border: 1px solid #369;
+  border-bottom: 1px solid white;
+}
+
+a.orangered{
+  color: orangered;
+  font-weight: bold;
+}
+
+
+
+/*******************/
+
+/*CONTENT LINKS*/
+
+/*********************/
+
+
+.content_img{
+  width: 60px;
+}
+
+.content_text{
+  margin-left: 10px;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.content_link{
+  margin: 10px;
+  color: gray;
+  width: 100%;
+}
+
+.subtext{
+  font-size: 11px;
+}
+
+.sublinks a{
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.content_a{
+  letter-spacing: 1px;
+}
+
+.sidebar{
+  float: right;
+  padding: 15px;
+  width: 300px;
+}
+
+.search_box{
+  border: 1px solid gray;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.sidebar_link{
+  display: block;
+  height: 30px;
+  background-color: lightblue;
+  border: 1px solid darkblue;
+  color: #369;
+  text-align: center;
+  padding: 5px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 975px){
+  .sidebar{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .main_content{
+    display: block;
+    width: 100%;
+  }
+}
+
+
