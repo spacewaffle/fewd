@@ -1,29 +1,33 @@
-var total = 0;
+var num = 0;
 
-document.getElementById('zero').onclick = zero;
-document.getElementById('add5').onclick = add5;
-document.getElementById('add10').onclick = add10;
-document.getElementById('sub1').onclick = sub1;
+document.getElementById("zero").onclick = clear;
+document.getElementById("add5").onclick = addFive;
+document.getElementById("add10").onclick = addTen;
+document.getElementById("sub1").onclick = subOne;
 
-function zero() {
-  total = 0;
-  document.getElementById('result').innerHTML = total;
+function clear(){
+  //stuff goes here!
+  num = 0;
+  document.getElementById("result").innerHTML = num;
+  console.log("clicked zero!");
 }
 
-function add5() {
-  total = total + 5;
-  
-  document.getElementById('result').innerHTML = total;
+function addFive(){
+  num = num + 5;
+  document.getElementById("result").innerHTML = num;
+  console.log("added 5");
 }
 
-function add10() {
-  total = total + 10;
- 
-  document.getElementById('result').innerHTML = total;
+function addTen(){
+  num = num + 10;
+  document.getElementById("result").innerHTML = num;
+  console.log("added 10");
 }
 
-function sub1() {
-  total = total - 1;
-  
-  document.getElementById('result').innerHTML = total;
+function subOne(){
+  num = num - 1;
+  document.getElementById("result").innerHTML = num;
+  console.log("sub 1");
 }
+
+

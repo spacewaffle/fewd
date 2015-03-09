@@ -1,23 +1,28 @@
+console.log("hello world!");
 
-function compare() {
-  console.log("comparing...");
-  var comparison;
-  var a = parseInt(document.getElementById('a').value, 10);
-  var b = parseInt(document.getElementById('b').value, 10);
+document.getElementById("submit").onclick = compare;
 
-  console.log(a + " " + b);
- 
-  if (a < b) {
-    comparison = '<';
-  } else if (a > b) {
-    comparison = '>';
-  } else if (a === b) {
-    comparison = '===';
-  } else{
-    comparison = 'N/A';
+
+
+function compare(){
+  console.log("thinking real hard...");
+  var a = parseInt(document.getElementById('a').value);
+  var b = parseInt(document.getElementById('b').value);
+
+  if(a > b){
+    document.getElementById("comparison").innerHTML = ">";
   }
-  console.log("comparison is " + comparison);
- document.getElementById('comparison').innerHTML = comparison;
-}
+  else if(a < b){
+    document.getElementById("comparison").innerHTML = "<";
+  }
+  else if(a == b){
+    document.getElementById("comparison").innerHTML = "==";
+  }
+  else{
+    document.getElementById("comparison").innerHTML = "N/A";
+  }
 
-document.getElementById('submit').onclick = compare;
+
+
+
+}

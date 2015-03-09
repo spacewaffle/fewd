@@ -1,14 +1,16 @@
-var lights = 'on';
+document.getElementById("light_switch").onclick = switchLight;
 
-function switchLights() {
-  console.log("switching lights");
-  if(lights == 'on') {
-    document.getElementById('container').className = "dark";
-    lights = 'off';
-  } else {
-    document.getElementById('container').className = '';
-    lights = 'on';
+var blah = 1;
+
+function switchLight(){
+
+  if(blah == 1){
+    blah = 0;
+    document.getElementById("container").style.backgroundColor = "black";
   }
+  else{
+    blah = 1;
+    document.getElementById("container").style.backgroundColor = "white";
+  }
+  console.log("switching the lights...");
 }
-
-document.getElementById('light_switch').onclick = switchLights;
