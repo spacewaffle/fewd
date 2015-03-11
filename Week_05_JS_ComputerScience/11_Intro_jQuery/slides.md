@@ -140,7 +140,7 @@ In jQuery, this might look more like:
 Note: We will certainly be discussing this in more detail, but in general jQuery let’s us grab some element from the page ($('slector')), and do something with it ($('selector').click(doSomething);). In this case, we grabbed an element with the id thingy and used .click() to make a function run when the user clicks on #thingy.
 
 ---
-
+w
 
 ##jQuery Click Event
 
