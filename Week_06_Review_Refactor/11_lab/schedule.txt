@@ -1,0 +1,18 @@
+Code Along: Review Image Slider
+http://codepen.io/spacewaffle/pen/QwJgog
+
+Lab: Finish Image Slider
+
+Image Slider Solutions
+http://codepen.io/spacewaffle/pen/azQwxP
+
+Code Along: Introduction to this (use reddit website)
+
+Code Along: Rework FAQ using this
+http://codepen.io/spacewaffle/pen/gbBbrx
+
+Lab: Refactor Reddit page using this
+(use your old reddit page project)
+
+Lab: Rock Paper Scissors
+http://codepen.io/spacewaffle/pen/XJygOB
