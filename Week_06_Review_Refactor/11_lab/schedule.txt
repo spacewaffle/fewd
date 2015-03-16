@@ -1,3 +1,5 @@
+Code Along: Review of Scope
+
 Code Along: Review Image Slider
 http://codepen.io/spacewaffle/pen/QwJgog
 
