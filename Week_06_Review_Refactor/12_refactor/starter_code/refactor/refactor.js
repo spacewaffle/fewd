@@ -34,7 +34,9 @@ $("#container>ol").prepend("<li>Gatorade</li>");
 
 //VS
 var groceries=["Milk","Cookies","Sugar","Bananas","Gatorade"];
-groceries.forEach(createLi);
+for (var i = 0; i < groceries.length; i++) {
+  createLi(groceries[i]);
+}
 
 //Combine jQuery selectors
 $("#container").css("width","960px");
@@ -54,7 +56,7 @@ $("#container,#main").css("color","purple");
 $("#container,#main").css({"width":"960px","background":"red","color":"purple"});
 
 //Chain jQuery function calls
-$("input").css("width","200px")
+$("input").css("width","200px");
 $("input").attr("placeholder","My placeholder");
 $("input").before("<label>My input</label>");
 
