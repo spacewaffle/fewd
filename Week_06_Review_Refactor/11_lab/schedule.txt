@@ -15,6 +15,3 @@ http://codepen.io/spacewaffle/pen/gbBbrx
 
 Lab: Refactor Reddit page using this
 (use your old reddit page project)
-
-Lab: Rock Paper Scissors
-http://codepen.io/spacewaffle/pen/XJygOB
