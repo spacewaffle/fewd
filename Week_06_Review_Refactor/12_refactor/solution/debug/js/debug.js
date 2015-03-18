@@ -1,22 +1,31 @@
 //error thrown example
-$("body")append("<h1>Hi world!</h1>");
-//console.log example, log each of the pies and the index before the switch 
-var pies=["Cherry","Pumpkin","Banana","a","Rhubarb"];
+$("body").append("<h1>Hi world!</h1>");
+
+var pies=["Cherry","Pumpkin","Banana","Rhubarb"];
+
+//console.log example, log the pie array to check for issues
+console.log(pies);
 $("body").append("There are "+pies.length+" total pies.<br>");
-pies.forEach(function(element,index){
-	switch(element){
-		case "Cherry": $("body").append(index+1+") "+element+": Yum!<br>");
-		break;
-		case "Rhubarb": $("body").append(index+1+") "+element+": Yuck<br>");
-		break;
-		case "Banana":
-		case "Pumpkin": $("body").append(index+1+") "+element+": meh<br>");
-		break;
+
+for(var i = 0; i < pies.length; i++){
+
+	//console.log example, log each pie before the if statements 
+	//console.log example, leave logs inside the if statements to ensure that they work 
+	console.log("pie is " + pies[i]);
+	if(pies[i] == "Cherry"){
+		console.log("matched cherry");
+		$("body").append(i+1+") "+pies[i]+": Yum!<br>");
 	}
-});
-//breakpoint example, put inside the function
-function doSomething(){
-	$("body").append("<p>Paragraph</p>");
-	console.log(myThing)
+	else if(pies[i] == "Rhubarb"){
+		console.log("matched rhubarb");
+		$("body").append(i+1+") "+pies[i]+": Yuck<br>");
+	}
+	else if(pies[i] == "Banana"){
+		console.log("matched banana");
+		$("body").append(i+1+") "+pies[i]+": Yuck<br>");
+	}
+	else if(pies[i] == "Pumpkin"){
+		console.log("matched pumpkin");
+		$("body").append(i+1+") "+pies[i]+": Yum!<br>");
+	}
 }
-doSomething();

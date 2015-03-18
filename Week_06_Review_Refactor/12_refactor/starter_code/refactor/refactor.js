@@ -1,11 +1,11 @@
 //Use variables example
-$("body").append("<img src='images/Will.png' alt='William\'s picture'><p>The instructor for this course is William Neely. William has a degree in Physics from Southwestern College.</p>");
+$("body").append("<p>The instructor for this course is Jon Cheng.</p>");
 
 //VS
 
-var first_name="William";
-var last_name="Neely";
-$("body").append("<img src='images/Will.png' alt='"+first_name+"\'s picture'><p>The instructor for this course is "+first_name+" "+last_name+". "+first_name+" has a degree in Physics from Southwestern College.</p>");
+var first_name="Jon";
+var last_name="Cheng";
+$("body").append("<p>The instructor for this course is "+first_name+" "+last_name+".");
 //ASK students why this is better
 
 //Use functions example
