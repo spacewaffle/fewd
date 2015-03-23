@@ -5,7 +5,7 @@ $("body").append("<p>The instructor for this course is Jon Cheng.</p>");
 
 var first_name="Jon";
 var last_name="Cheng";
-$("body").append("<p>The instructor for this course is "+first_name+" "+last_name+".");
+$("body").append("<p>The instructor for this course is " + first_name + " "+last_name+".</p>");
 //ASK students why this is better
 
 //Use functions example
@@ -33,7 +33,11 @@ $("#container>ol").prepend("<li>Bananas</li>");
 $("#container>ol").prepend("<li>Gatorade</li>");
 
 //VS
+function createLi(myLiText){
+  $("#container>ol").prepend("<li>"+myLiText+"</li>");
+}
 var groceries=["Milk","Cookies","Sugar","Bananas","Gatorade"];
+
 for (var i = 0; i < groceries.length; i++) {
   createLi(groceries[i]);
 }

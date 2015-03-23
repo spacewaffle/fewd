@@ -1,4 +1,4 @@
-Review of jquery objects vs dom elements
+jQuery objects vs dom elements
   .hide() on jquery objects vs .hide() on dom elements
   this vs $(this)
 
